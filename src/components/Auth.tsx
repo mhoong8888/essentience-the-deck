@@ -69,7 +69,7 @@ export function Auth({
           <p className="eyebrow mb-4">Human Performance · The Protocol</p>
           <h1 className="font-display text-5xl leading-[0.95]">
             {isSignup ? "Join The Deck" : "Welcome Back"}
-            <span className="align-super text-lg text-coral">™</span>
+            {isSignup && <span className="align-super text-lg text-coral">™</span>}
           </h1>
           <p className="mx-auto mt-4 max-w-xs text-sm leading-relaxed text-slate">
             {isSignup
